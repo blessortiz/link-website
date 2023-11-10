@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nav bar</title>
+<style>
+	*{
+		margin:0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: "Press Start 2P", sans-sarif;
+	}
+	
+	body{
+		min-height: 100vh;
+		background-image: url("C:/Users/bless/Downloads/banana.gif");
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.header{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 20px 100px;
+		background: transparent;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 100;
+	}
+	
+	.logo{
+		position: fixed;
+		font-weight: 700;
+		left: 50px;
+		top: 5%;
+	}
+	.navbar{
+		margin-left: auto;
+		margin-top: 20px;
+	}
+	.navbar a {
+		position: relative;
+		font-size: 18px;
+		color: #fff;
+		font-weight: 500;
+		text-decoration: none;
+		margin-left: 40px;
+	}
+	
+	.navbar a::before{
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0; 
+		width: 0;
+		height: 2px;
+		background: #fff;
+		transition: .3s;
+	}
+	
+	.navbar a:hover::before{
+		width: 100%;		
+	}
+	
+	.button {
+		position: fixed;
+		right: 15px; 
+		bottom: 15px;
+		display: inline-block;
+		padding: 15px 25px;
+		font-size: 24px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: rgba(142,195,235,0.5);
+		border: none;
+		border-radius: 10px;
+		box-shadow: 0 9px #999;
+	}
+	.button:hover{
+		color: white;
+		background-color: #8ec3eb;
+	}
+	.button:active {
+		background-color: white;
+		box-shadow: 0 5px #666;
+		transform: translateY(4px);
+	}
+	.button-location {
+		position: absolute;
+		left: 110px;
+		bottom: 10%;
+	}
+	
+	.right-image{
+		position: fixed;
+		top: 260px;
+		left: -100px;
+		border: #000080;
+	}
+	
+
+</style>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header"> 
+		<div class="logo">
+		<a href="https://www.ctu.edu.ph" class="logo">
+		<img src="C:/Users/bless/Downloads/ct.png" height="150" width="200" alt="ctu">
+		</div>
+		<nav class="navbar">
+			<a href="https://www.google.com/maps/place/Marco+Polo+Plaza+Cebu/@10.3417299,123.8974558,17z/data=!3m1!4b1!4m9!3m8!1s0x33a998da1684fa5f:0x84115ba56079b05c!5m2!4m1!1i2!8m2!3d10.3417299!4d123.8974558!16s%2Fg%2F1tm08bmd?entry=ttu">Location</a>
+
+			<a href="file:///C:/Users/bless/OneDrive/Desktop/HTML%20purposes/proj2.html">About me</a>
+			<a href="C:\Users\bless\OneDrive\Desktop\HTML purposes\new2.html">Videos</a>
+			<a href="#"></a>
+		</nav>
+		<div class="button-location">
+			<div class="w3-container">
+				<div class="button">
+				<a href="C:\Users\bless\OneDrive\Desktop\HTML purposes\proj.html"> 
+				<button class="button">Logout</button>
+				</a>	
+			</div>
+		</div>
+	</div>
+	
+	<div class="right-image">
+		<img src="C:\Users\bless\Downloads\bl.png" height="500" width="500" alt="Profile">
+	</div>
+	
+	 </header>
+	</body>
+</html>
